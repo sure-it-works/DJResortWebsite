@@ -29,5 +29,11 @@ namespace DJResortWebsite.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DJResortWebsite.Models.Guest> Guests { get; set; }
+
+        public System.Data.Entity.DbSet<DJResortWebsite.Models.Space> Spaces { get; set; }
+
+        public System.Data.Entity.DbSet<DJResortWebsite.Models.Room_Usage> Room_Usage { get; set; }
     }
 }
